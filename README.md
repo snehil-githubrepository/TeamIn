@@ -1,81 +1,122 @@
-# Turborepo starter
+<h1 align="center">TeamIn</h2>
 
-This is an official starter Turborepo.
+<h4 align="center"> <i>Manage roles, tasks, and deadlines effectively with <b>TeamIn</b>.</i>
+</h4>
 
-## Using this example
+---
 
-Run the following command:
+## Features
 
-```sh
-npx create-turbo@latest
-```
+- **User Roles**: Assign roles such as Admin, Manager, Developer, and Viewer.
+- **Task Management**: Create, assign, update, and track tasks.
+- **Deadlines**: Set and manage task deadlines.
+- **Notifications**: Get notified about upcoming deadlines and updates.
+- **Reporting**: Generate progress and performance reports.
 
-## What's inside?
+---
 
-This Turborepo includes the following packages/apps:
+## Installation
 
-### Apps and Packages
+To set up the application locally:
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+1. Clone the repository:
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+   ```bash
+   git clone https://github.com/snehil-githubrepository/TeamIn.git
+   ```
 
-### Utilities
+2. Install dependencies:
 
-This Turborepo has some additional tools already setup for you:
+   ```bash
+   npm install
+   ```
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### Build
+---
 
-To build all apps and packages, run the following command:
+## Usage
 
-```
-cd my-turborepo
-pnpm build
-```
+### Assigning Roles
 
-### Develop
+Roles can be assigned to users to control their access and permissions:
 
-To develop all apps and packages, run the following command:
+1. Navigate to the **User Management** section.
+2. Select a user and click on `Assign Role`.
+3. Choose a role from the dropdown (e.g., Admin, Manager, Developer, Viewer).
 
-```
-cd my-turborepo
-pnpm dev
-```
+### Creating Tasks
 
-### Remote Caching
+1. Navigate to the **Tasks** section.
+2. Click on `Create Task`.
+3. Fill out the task details (e.g., Title, Description, Assigned User, Deadline).
+4. Click `Save`.
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+### Setting Deadlines
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+1. While creating or editing a task, set the `Deadline` field.
+2. The application will notify users as the deadline approaches.
 
-```
-cd my-turborepo
-npx turbo login
-```
+> [!IMPORTANT]
+> Ensure all tasks have deadlines to maintain project efficiency.
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+### Managing Notifications
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+Notifications will appear in the **Notifications** section:
 
-```
-npx turbo link
-```
+- Deadline reminders
+- Task updates
+- Role changes
 
-## Useful Links
+> [!NOTE]
+> Notifications can be customized in the **Settings** section.
 
-Learn more about the power of Turborepo:
+### Generating Reports
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+1. Navigate to the **Reports** section.
+2. Choose the type of report (e.g., Progress Report, Team Performance).
+3. Select the date range and click `Generate`.
+
+---
+
+## Contribution
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature description"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For any queries or support, please contact us at [support@teamin.com](mailto:support@teamin.com).
+
+---
+
+> [!IMPORTANT]
+> Always keep your project data backed up to avoid loss in case of server failure.
+
+> [!NOTE]
+> Regularly check for updates to ensure you have the latest features and security patches.
